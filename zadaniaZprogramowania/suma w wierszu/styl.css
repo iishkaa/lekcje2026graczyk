@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #caa5d5;
+    border: #886b91 2px dotted;
+    padding: 10px;
+    font-family: Leelawadee;
+    color: #463d49;
+}
+h1 {
+    color: #eedbf6;
+}
+h2 {
+    color: #867291;
+}
+input {
+    background-color: #9c7aa9;
+}
+textarea {
+    background-color: #9c7aa9;
+}
+input, textarea {
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #463d49;
+}
