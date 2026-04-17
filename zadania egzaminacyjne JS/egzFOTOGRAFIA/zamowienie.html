@@ -24,12 +24,39 @@
 <main>
     <section class="left">
         <h3>Zamówienie</h3>
-        <label for="wybierzObraz"></label>
-        <input type="text" id="wybierzObraz" name="wybierzObraz">
+        <label for="wybierzObraz">Wybierz obraz: </label>
+        <input type="file" id="wybierzObraz" name="wybierzObraz" accept=".jpeg"><br>
+        <label for="liczKopii">Liczba kopii: </label>
+        <input type="number" id="liczKopii" name="liczKopii"><br>
+        <label>
+            <input type="radio" name="rodzajPapieru" value="błyszczący">Papier błyszczący
+        </label>
+         <br>
+        <label>
+            <input type="radio" name="rodzajPapieru" value="matowy">Papier matowy
+        </label>
+        <input type="submit" value="Dodaj do koszyka" id="submit">
     </section>
-    <nav></nav>
-    <section class="right"></section>
+    <nav>
+        <ul>
+            <li>
+                <a href="regulamin.html">Regulamin</a>
+            </li>
+            <li>
+                <a href="uslugi.html">Usługi</a>
+            </li>
+            <li>
+                <a href="https://pixabay.com">Zdjęcia</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="right">
+        <h3>Koszyk</h3>
+
+    </section>
 </main>
-<footer></footer>
+<footer>
+    <p>Autor strony: <i> Michalina Wolna 3p_2</i></p>
+</footer>
 </body>
 </html>

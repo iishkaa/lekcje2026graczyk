@@ -1,0 +1,21 @@
+* {
+    font-family: "Century Gothic", Arial;
+}
+body {
+    background-color: BlanchedAlmond;
+}
+header, footer {
+    background-color: Sienna;
+    color: white;
+    padding:5px ;
+    text-align: center;
+    font-size: 130%;
+}
+.left {
+    background-color: NavajoWhite;
+    margin: 10px;
+    padding: 20px;
+    width: 35%;
+    height: 400px;
+    box-shadow: 5px 5px 10px DimGray;
+}
