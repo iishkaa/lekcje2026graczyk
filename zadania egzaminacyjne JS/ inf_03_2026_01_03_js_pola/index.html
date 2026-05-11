@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pola figur</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<header>
+    <h2>Pola figur płaskich</h2>
+</header>
+<main>
+    <nav>
+        <h3>MENU</h3>
+        <ul>
+            <li>
+                <a href="index.html">Prostokąt i trójkąt</a>
+            </li>
+            <li>
+                <a href="kolo.html">Okrąg i koło</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <img src="1d.bmp" alt="Figura" id="figura">
+        <img src="1m.bmp" alt="Wybierz trójkąt" class="WyTrojkat" id="f1">
+        <img src="2m.bmp" alt="Wybierz trójkąt" class="WyTrojkat" id="f2">
+    </section>
+    <aside>
+        <h3>Pole prostokątna / pole trójkąta</h3>
+        <label for="bokpodstawa">Bok prostokąta / podstawa trójkąta:</label><br>
+        <input type="number" id="bokpodstawa"><br>
+        <label for="bokwysokosc">Drugi bok prostokąta / wysokość trójkąta:</label><br>
+        <input type="number" id="bokwysokosc"><br>
+        <button id="btn">Oblicz</button>
+        <p id="wynik"></p>
+    </aside>
+</main>
+<footer>
+    <p>Autor: Michalina Wolna 3p</p>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
