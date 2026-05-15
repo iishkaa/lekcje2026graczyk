@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #efb6c9;
+    font-family: "Century Gothic", sans-serif;
+    color: #a84f6a;
+    padding: 20px;
+}
+section {
+    background-color: #e891af;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 10px 10px 10px #824555;
+}
+p {
+    font-weight: bold;
+}
+input {
+    background-color: #c45a7a;
+    border: none;
+    color: #481b26;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px;
+}
+fieldset {
+    border-color: #d38495;
+}
+legend {
+    font-weight: bold;
+}
+hr {
+    border-color:  #d38495;
+}
+#button {
+    cursor: pointer;
+}
+#button:hover {
+    background-color: #963b57;
+    box-shadow: 5px 5px 10px #824555;
+}
+pre {
+    font-weight: bolder;
+    font-size: 15px;
+}
