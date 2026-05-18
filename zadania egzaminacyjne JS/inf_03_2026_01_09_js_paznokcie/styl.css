@@ -1,0 +1,57 @@
+* {
+    font-family: "Trebuchet MS", sans-serif;
+}
+body {
+    background-color: BlanchedAlmond;
+    text-align: center;
+}
+aside {
+    width: 20%;
+    float: left;
+}
+aside img {
+    width: 100%;
+}
+main {
+    width: 80%;
+    float: right;
+}
+nav {
+    text-align: left;
+    margin-left: 10%;
+}
+section {
+    background-color: Salmon;
+    margin-left: 10%;
+    padding: 10px;
+    height: 250px;
+}
+.one {
+    display: block;
+}
+.two, .three {
+    display: none;
+}
+button {
+    width: 26%;
+    color: white;
+    border: none;
+    font-size: 200%;
+}
+#Kolor {
+    background-color: Salmon;
+}
+#Ksztalt {
+    background-color: Crimson;
+}
+#Wzor {
+    background-color: Crimson;
+}
+.wzory {
+    width: 70px;
+    margin: 5px;
+    border-radius: 100%;
+}
+footer {
+    clear: both;
+}

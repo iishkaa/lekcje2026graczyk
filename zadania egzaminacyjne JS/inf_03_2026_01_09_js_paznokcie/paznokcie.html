@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Stylizacja paznokci</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<aside>
+    <img src="manicure.jpg" alt="Stylizacja paznokci">
+</aside>
+<main>
+    <header>
+        <h1>Twoje wymarzone paznokcie</h1>
+    </header>
+    <nav>
+        <button id="Kolor">Kolor</button>
+        <button id="Ksztalt">Kształt</button>
+        <button id="Wzor">Wzór</button>
+        <script>
+            let btnKolor = document.getElementById("Kolor")
+            let btnKsztalt = document.getElementById("Ksztalt")
+            let btnWzor = document.getElementById("Wzor")
+            const sec1 = document.getElementsByClassName("one")
+            const sec2 = document.getElementsByClassName("two")
+            const sec3 = document.getElementsByClassName("three")
+
+            btnKolor.addEventListener("mouseover", function (){
+                sec1.style.display = "block"
+                sec2.style.display = "none"
+                sec3.style.display = "none"
+                btnKolor.style.backgroundColor = "Salmon"
+                btnKsztalt.style.backgroundColor = "Crimson"
+                btnWzor.style.backgroundColor = "Crimson"
+            })
+            btnKsztalt.addEventListener("mouseover", function (){
+                sec1.style.display = "none"
+                sec2.style.display = "block"
+                sec3.style.display = "none"
+                btnKolor.style.backgroundColor = "Crimson"
+                btnKsztalt.style.backgroundColor = "Salmon"
+                btnWzor.style.backgroundColor = "Crimson"
+            })
+            btnWzor.addEventListener("mouseover", function (){
+                sec1.style.display = "none"
+                sec2.style.display = "none"
+                sec3.style.display = "block"
+                btnKolor.style.backgroundColor = "Crimson"
+                btnKsztalt.style.backgroundColor = "Crimson"
+                btnWzor.style.backgroundColor = "Salmon"
+            })
+
+        </script>
+    </nav>
+    <section class="one">
+        <h2>Kolor</h2>
+        <img src="kolory.png" alt="Kolory paznokci"><br>
+        <input type="color" value="#FF0000">
+    </section>
+    <section class="two">
+        <h2>Kształt</h2>
+        <img src="ksztalt.png" alt="Kształty paznokci">
+        <select name="kształtyPaznokci" id="ksztaltyPaznokci">
+            <option value="migdal">migdał</option>
+            <option value="zaokrąglony">zaokrąglony</option>
+            <option value="kwadratowy">kwadratowy</option>
+            <option value="balerina">balerina</option>
+            <option value="zaokrąglonyKształt">zaokrąglony kształt</option>
+        </select>
+    </section>
+    <section class="three">
+        <h2>Wzór</h2>
+        <script>
+            for (let i = 1; i <=10; i++){
+                document.writeln("<img class='wzory' src="
+                    + '"' + i + ".jpg" + '"' + " title=" + '"' + i + '"' + ">")
+
+            }
+        </script>
+        <br>
+        <input type="number" name="wartosci" id="wartosci" min="1" max="10">
+    </section>
+</main>
+<footer>
+    <p>Autor strony: <em>Michalina Wolna 3p_2</em></p>
+</footer>
+</body>
+</html>
