@@ -21,30 +21,27 @@
             let btnKolor = document.getElementById("Kolor")
             let btnKsztalt = document.getElementById("Ksztalt")
             let btnWzor = document.getElementById("Wzor")
-            const sec1 = document.getElementsByClassName("one")
-            const sec2 = document.getElementsByClassName("two")
-            const sec3 = document.getElementsByClassName("three")
 
-            btnKolor.addEventListener("mouseover", function (){
-                sec1.style.display = "block"
-                sec2.style.display = "none"
-                sec3.style.display = "none"
+            btnKolor.addEventListener("mouseenter", function (){
+                document.getElementById("one").style.display = "block"
+                document.getElementById("two").style.display = "none"
+                document.getElementById("three").style.display = "none"
                 btnKolor.style.backgroundColor = "Salmon"
                 btnKsztalt.style.backgroundColor = "Crimson"
                 btnWzor.style.backgroundColor = "Crimson"
             })
-            btnKsztalt.addEventListener("mouseover", function (){
-                sec1.style.display = "none"
-                sec2.style.display = "block"
-                sec3.style.display = "none"
+            btnKsztalt.addEventListener("mouseenter", function (){
+                document.getElementById("one").style.display = "none"
+                document.getElementById("two").style.display = "block"
+                document.getElementById("three").style.display = "none"
                 btnKolor.style.backgroundColor = "Crimson"
                 btnKsztalt.style.backgroundColor = "Salmon"
                 btnWzor.style.backgroundColor = "Crimson"
             })
-            btnWzor.addEventListener("mouseover", function (){
-                sec1.style.display = "none"
-                sec2.style.display = "none"
-                sec3.style.display = "block"
+            btnWzor.addEventListener("mouseenter", function (){
+                document.getElementById("one").style.display = "none"
+                document.getElementById("two").style.display = "none"
+                document.getElementById("three").style.display = "block"
                 btnKolor.style.backgroundColor = "Crimson"
                 btnKsztalt.style.backgroundColor = "Crimson"
                 btnWzor.style.backgroundColor = "Salmon"
