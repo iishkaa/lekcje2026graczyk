@@ -54,10 +54,47 @@
                     }
                 ?>
             </select>
-            <input type="number" name="liczbaOwocow">
-            <button>Zamów</button> <!--wysylka do skrypt3-->
+            <input type="number" name="liczbaOwocow" id="liczbaOwocow">
+            <input type="submit" value="Wyślij" name="btn" id="btn"> <!--wysylka do skrypt3-->
         </form>
-        <!--skrypt3-->
+        <?php
+
+        if (isset($_POST["btn"])){
+            $towarId = $_POST["owoc"];
+            $kg = $_POST["liczbaOwocow"];
+
+            $conn1 = new mysqli("localhost", "root", "", "bazar");
+
+            if ($conn1->connect_error){
+                die("Błąd połączenia: " . $conn1->connect_error);
+            }
+
+            $sql1 = "SELECT rodzaj, nazwa, cena FROM towar WHERE id = $towarId";
+
+            $result1 = $conn1->query($sql1);
+
+            if ($result1->num_rows > 0){
+
+                $row = $result1->fetch_assoc();
+
+                $rodzaj = $row["rodzaj"];
+                $nazwa = $row["nazwa"];
+                $cena = $row["cena"];
+
+                $wartosc = $cena * $kg;
+
+                echo "<p>$rodzaj $nazwa wartość: $wartosc zł</p>";
+
+                $sql2 = "INSERT INTO zamowienie(id_towar, id_sklep, liczba_kg)
+         VALUES($towarId, 2, $kg)";
+
+                $conn1->query($sql2);
+            }
+
+            $conn1->close();
+        }
+
+        ?>
     </section>
 </main>
 <footer>
